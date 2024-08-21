@@ -1,0 +1,63 @@
+.city {
+  padding: 2rem 3rem;
+  max-height: 70%;
+  background-color: var(--color-dark--2);
+  border-radius: 7px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+.city::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.city::-webkit-scrollbar-track {
+  background: #2d3439; /* Background of the scrollbar track */
+}
+
+.city::-webkit-scrollbar-thumb {
+  background-color: #242a2e; /* Dark black color for the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+  border: 3px solid #2d3439; /* Adds padding around the scrollbar thumb */
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.city h6 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--color-light--1);
+}
+
+.city h3 {
+  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.city h3 span {
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.city p {
+  font-size: 1.6rem;
+}
+
+.city a:link,
+.city a:visited {
+  font-size: 1.6rem;
+  color: var(--color-brand--1);
+}
